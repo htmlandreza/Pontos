@@ -1,0 +1,580 @@
+[
+    {
+        "id": "5ab54394b079877ff6187946",
+        "email": "rafael@iblueconsulting.com.br",
+        "name": "Rafael",
+        "memberships": [
+            {
+                "userId": "5ab54394b079877ff6187946",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54394b079877ff6187946",
+                "hourlyRate": null,
+                "targetId": "5ac3e54ab07987197abef291",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54394b079877ff6187946",
+                "hourlyRate": null,
+                "targetId": "5ab54394b079877ff6187948",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR12",
+            "dateFormat": "MM/DD/YYYY",
+            "sendNewsletter": true,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "TEAM",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": false
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5ab54456b079877ff6187961",
+        "email": "axavier@iblueconsulting.com.br",
+        "name": "Andreia Xavier",
+        "memberships": [
+            {
+                "userId": "5ab54456b079877ff6187961",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54456b079877ff6187961",
+                "hourlyRate": null,
+                "targetId": "5ab54394b079877ff6187948",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54456b079877ff6187961",
+                "hourlyRate": null,
+                "targetId": "5ac3e54ab07987197abef291",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR12",
+            "dateFormat": "MM/DD/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": false
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5ab54464b079877ff6187963",
+        "email": "rcavalcante@iblueconsulting.com.br",
+        "name": "Rita Cavalcante",
+        "memberships": [
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ab54394b079877ff6187948",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e2dab07987197abef23e",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e382b07987197abef24c",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e419b07987197abef268",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e45cb07987197abef272",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e4bbb07987197abef27b",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e501b07987197abef289",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5ac3e54ab07987197abef291",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b0332c1b07987316a2a91cb",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b31932ab0798759ff77ec2d",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b319348b0798759ff77ec36",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b31935eb0798759ff77ec3a",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b31937cb0798759ff77ec3f",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b7ef60bb079872ea1c55cb3",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5b32799cb0798768dce59fcd",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5bbbc6f0b079870146f6beb3",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5bd8b0c4b07987515be9fbb5",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5c018437b0798723e0f1f8ed",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5c018459b0798723e0f1f94e",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5c24f3edb07987090e4e89a0",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5c2e6cb1b079874ebdcccfcb",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5ab54464b079877ff6187963",
+                "hourlyRate": null,
+                "targetId": "5c93d2da1080ec1c72f1a7e9",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify-dev/2018-04-03T20%3A17%3A55.739ZIMG_6004.JPG",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR24",
+            "dateFormat": "DD/MM/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": true,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Task"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": true
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5c8659d7b079873c04f1421d",
+        "email": "amoreira@iblueconsulting.com.br",
+        "name": "Andreza Moreira",
+        "memberships": [
+            {
+                "userId": "5c8659d7b079873c04f1421d",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5c8659d7b079873c04f1421d",
+                "hourlyRate": null,
+                "targetId": "5ac3e1e5b07987197abef220",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR24",
+            "dateFormat": "DD/MM/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": true
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5bbb56b2b079870146f59a34",
+        "email": "vinioliveira@iblueconsulting.com.br",
+        "name": "Vinioliveira",
+        "memberships": [
+            {
+                "userId": "5bbb56b2b079870146f59a34",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5bbb56b2b079870146f59a34",
+                "hourlyRate": null,
+                "targetId": "5bc76fbfb079875e56a519f1",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5bbb56b2b079870146f59a34",
+                "hourlyRate": null,
+                "targetId": "5bc76fc7b079875e56a51a13",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR12",
+            "dateFormat": "MM/DD/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": true
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5c646492b079873c56488339",
+        "email": "jalberto@iblueconsulting.com.br",
+        "name": "Jalberto",
+        "memberships": [
+            {
+                "userId": "5c646492b079873c56488339",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5c646492b079873c56488339",
+                "hourlyRate": null,
+                "targetId": "5bc76fbfb079875e56a519f1",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5c646492b079873c56488339",
+                "hourlyRate": null,
+                "targetId": "5bc76fc7b079875e56a51a13",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify-dev/2019-02-27T17%3A17%3A37.767ZfotoJorge.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR12",
+            "dateFormat": "MM/DD/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": true
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5b9fc20ab079873a7f760a75",
+        "email": "tagante@iblueconsulting.com.br",
+        "name": "Tagante",
+        "memberships": [
+            {
+                "userId": "5b9fc20ab079873a7f760a75",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5b9fc20ab079873a7f760a75",
+                "hourlyRate": null,
+                "targetId": "5b7ef60bb079872ea1c55cb3",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5b9fc20ab079873a7f760a75",
+                "hourlyRate": null,
+                "targetId": "5ac3e4bbb07987197abef27b",
+                "membershipType": "PROJECT",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5b9fc20ab079873a7f760a75",
+                "hourlyRate": null,
+                "targetId": "5ac3e1e5b07987197abef220",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5b9fc20ab079873a7f760a75",
+                "hourlyRate": null,
+                "targetId": "5bc76fbfb079875e56a519f1",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5b9fc20ab079873a7f760a75",
+                "hourlyRate": null,
+                "targetId": "5bc76fc7b079875e56a51a13",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR12",
+            "dateFormat": "MM/DD/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": true
+        },
+        "status": "ACTIVE"
+    },
+    {
+        "id": "5c61a795b079871c51a0a6c3",
+        "email": "aoliveira@iblueconsulting.com.br",
+        "name": "Alexandre Oliveira",
+        "memberships": [
+            {
+                "userId": "5c61a795b079871c51a0a6c3",
+                "hourlyRate": {
+                    "amount": 0,
+                    "currency": "USD"
+                },
+                "targetId": "5ab54394b079877ff6187947",
+                "membershipType": "WORKSPACE",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5c61a795b079871c51a0a6c3",
+                "hourlyRate": null,
+                "targetId": "5bc76fbfb079875e56a519f1",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            },
+            {
+                "userId": "5c61a795b079871c51a0a6c3",
+                "hourlyRate": null,
+                "targetId": "5bc76fc7b079875e56a51a13",
+                "membershipType": "USERGROUP",
+                "membershipStatus": "ACTIVE"
+            }
+        ],
+        "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+        "activeWorkspace": "5ab54394b079877ff6187947",
+        "defaultWorkspace": "5ab54394b079877ff6187947",
+        "settings": {
+            "weekStart": "MONDAY",
+            "timeZone": "America/Sao_Paulo",
+            "timeFormat": "HOUR12",
+            "dateFormat": "MM/DD/YYYY",
+            "sendNewsletter": false,
+            "weeklyUpdates": false,
+            "longRunning": false,
+            "summaryReportSettings": {
+                "group": "Project",
+                "subgroup": "Time Entry"
+            },
+            "isCompactViewOn": false,
+            "dashboardSelection": "ME",
+            "dashboardViewType": "BILLABILITY",
+            "dashboardPinToTop": false,
+            "timeTrackingManual": false
+        },
+        "status": "ACTIVE"
+    }
+]

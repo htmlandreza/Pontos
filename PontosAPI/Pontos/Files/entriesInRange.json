@@ -1,0 +1,4700 @@
+[
+    {
+        "id": "5c792328b0798721ba12148f",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-28T12:18:17Z",
+            "end": "2019-02-28T15:18:17Z",
+            "duration": "PT3H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c79238fb0798721ba121750",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-28T17:20:32Z",
+            "end": "2019-02-28T21:20:32Z",
+            "duration": "PT4H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792407b0798721ba121a15",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-27T12:22:24.892Z",
+            "end": "2019-02-27T15:22:24.892Z",
+            "duration": "PT3H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792449b0798721ba121b78",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-27T16:23:23.526Z",
+            "end": "2019-02-27T21:23:23.526Z",
+            "duration": "PT5H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7924a6b0798721ba121e1d",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-26T12:24:53.389Z",
+            "end": "2019-02-26T15:00:53.389Z",
+            "duration": "PT2H36M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7924e1b0798721ba121fa8",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-26T16:00:57.481Z",
+            "end": "2019-02-26T22:24:57.481Z",
+            "duration": "PT6H24M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792515b0798721ba1220e4",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-25T12:27:10.512Z",
+            "end": "2019-02-25T16:00:10.512Z",
+            "duration": "PT3H33M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c79253cb0798721ba12223d",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-25T17:00:49.517Z",
+            "end": "2019-02-25T21:27:49.517Z",
+            "duration": "PT4H27M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792582b0798721ba122474",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-22T12:29:07.965Z",
+            "end": "2019-02-22T15:30:07.965Z",
+            "duration": "PT3H1M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7925b4b0798721ba12260b",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-22T16:30:47.807Z",
+            "end": "2019-02-22T21:29:47.807Z",
+            "duration": "PT4H59M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792e28b0798721ba1268db",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-21T13:05:01Z",
+            "end": "2019-02-21T15:15:01Z",
+            "duration": "PT2H10M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792e38b0798721ba12696d",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-21T16:15:45Z",
+            "end": "2019-02-21T22:05:45Z",
+            "duration": "PT5H50M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792ed4b0798721ba126ea1",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-19T13:08:27Z",
+            "end": "2019-02-19T16:00:27Z",
+            "duration": "PT2H52M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792ee7b0798721ba126f3a",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-19T17:00:38Z",
+            "end": "2019-02-19T22:08:38Z",
+            "duration": "PT5H8M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792f82b0798721ba1274a3",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-20T12:20:30Z",
+            "end": "2019-02-20T15:20:30Z",
+            "duration": "PT3H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c792f92b0798721ba127529",
+        "description": "Desenvolvendo Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-20T16:00:31Z",
+            "end": "2019-02-20T21:00:31Z",
+            "duration": "PT5H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793028b0798721ba1279cd",
+        "description": "Planning Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-18T12:30:47Z",
+            "end": "2019-02-18T15:00:47Z",
+            "duration": "PT2H30M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c79303eb0798721ba127a57",
+        "description": "Planning Sprint 18",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-18T16:00:17Z",
+            "end": "2019-02-18T21:30:17Z",
+            "duration": "PT5H30M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793073b0798721ba127c7b",
+        "description": "Planning Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": false,
+        "task": null,
+        "project": null,
+        "timeInterval": {
+            "start": "2019-02-04T11:00:40Z",
+            "end": "2019-02-04T14:00:40Z",
+            "duration": "PT3H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": null
+    },
+    {
+        "id": "5c793090b0798721ba127d77",
+        "description": "Planning Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-04T15:00:33Z",
+            "end": "2019-02-04T20:00:33Z",
+            "duration": "PT5H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7930aeb0798721ba127e7c",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-05T11:00:11Z",
+            "end": "2019-02-05T14:05:11Z",
+            "duration": "PT3H5M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7930bdb0798721ba127eed",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-05T15:05:31Z",
+            "end": "2019-02-05T20:00:31Z",
+            "duration": "PT4H55M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7930ddb0798721ba12800e",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-07T11:03:46Z",
+            "end": "2019-02-07T14:00:46Z",
+            "duration": "PT2H57M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7930eab0798721ba12807a",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-07T15:00:19Z",
+            "end": "2019-02-07T20:03:19Z",
+            "duration": "PT5H3M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793127b0798721ba128273",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-06T11:10:05Z",
+            "end": "2019-02-06T14:00:05Z",
+            "duration": "PT2H50M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c79317cb0798721ba1284fa",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-06T15:00:33Z",
+            "end": "2019-02-06T20:10:33Z",
+            "duration": "PT5H10M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7931b4b0798721ba1286df",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-08T12:19:57Z",
+            "end": "2019-02-08T14:00:57Z",
+            "duration": "PT1H41M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7931c4b0798721ba12876b",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-08T15:00:53Z",
+            "end": "2019-02-08T21:19:53Z",
+            "duration": "PT6H19M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793275b0798721ba128cf8",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-11T11:00:26Z",
+            "end": "2019-02-11T14:00:26Z",
+            "duration": "PT3H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793283b0798721ba128d6b",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-11T15:00:07Z",
+            "end": "2019-02-11T20:00:07Z",
+            "duration": "PT5H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7932c2b0798721ba128f76",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-12T12:24:20Z",
+            "end": "2019-02-12T14:00:20Z",
+            "duration": "PT1H36M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7932efb0798721ba129141",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-12T15:00:23Z",
+            "end": "2019-02-12T21:24:23Z",
+            "duration": "PT6H24M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793354b0798721ba12946a",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-13T11:15:09Z",
+            "end": "2019-02-13T14:00:09Z",
+            "duration": "PT2H45M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793367b0798721ba129506",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-13T15:00:49Z",
+            "end": "2019-02-13T20:15:49Z",
+            "duration": "PT5H15M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793384b0798721ba129603",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-14T11:30:08Z",
+            "end": "2019-02-14T15:00:08Z",
+            "duration": "PT3H30M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793394b0798721ba12969a",
+        "description": "Desenvolvendo Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-14T16:00:37Z",
+            "end": "2019-02-14T20:30:37Z",
+            "duration": "PT4H30M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7933dab0798721ba1298d6",
+        "description": "Review Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-15T11:00:43Z",
+            "end": "2019-02-15T14:20:43Z",
+            "duration": "PT3H20M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c7933efb0798721ba129991",
+        "description": "Review Sprint 17",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-15T15:20:04Z",
+            "end": "2019-02-15T20:00:04Z",
+            "duration": "PT4H40M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793459b0798721ba129d38",
+        "description": "Review Sprint 16",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-01T11:00:11Z",
+            "end": "2019-02-01T14:00:11Z",
+            "duration": "PT3H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c793473b0798721ba129e59",
+        "description": "Review Sprint 16",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-01T15:00:11Z",
+            "end": "2019-02-01T20:00:11Z",
+            "duration": "PT5H"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c9940eed278ae3816a2b399",
+        "description": "Desenvolvendo Sprint 19",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-13T15:10:03Z",
+            "end": "2019-02-13T20:00:03Z",
+            "duration": "PT4H50M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c99414ef15c980c7be5f344",
+        "description": "Desenvolvendo Sprint 19",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-14T11:30:35Z",
+            "end": "2019-02-14T14:10:35Z",
+            "duration": "PT2H40M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    },
+    {
+        "id": "5c9941a3f15c980c7be5f368",
+        "description": "Desenvolvendo Sprint 19",
+        "tags": null,
+        "user": {
+            "id": "5ac3e260b07987197abef231",
+            "email": "gfranca@iblueconsulting.com.br",
+            "name": "Gfranca",
+            "memberships": [
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": {
+                        "amount": 0,
+                        "currency": "USD"
+                    },
+                    "targetId": "5ab54394b079877ff6187947",
+                    "membershipType": "WORKSPACE",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e1e5b07987197abef220",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5ac3e3ddb07987197abef25c",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e260b07987197abef231",
+                    "hourlyRate": null,
+                    "targetId": "5bc76fc7b079875e56a51a13",
+                    "membershipType": "USERGROUP",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "profilePicture": "https://s3.eu-central-1.amazonaws.com/clockify/no-user-image.png",
+            "activeWorkspace": "5ab54394b079877ff6187947",
+            "defaultWorkspace": "5ab54394b079877ff6187947",
+            "settings": {
+                "weekStart": "MONDAY",
+                "timeZone": "America/Sao_Paulo",
+                "timeFormat": "HOUR12",
+                "dateFormat": "MM/DD/YYYY",
+                "sendNewsletter": false,
+                "weeklyUpdates": false,
+                "longRunning": false,
+                "summaryReportSettings": {
+                    "group": "Project",
+                    "subgroup": "Time Entry"
+                },
+                "isCompactViewOn": false,
+                "dashboardSelection": "ME",
+                "dashboardViewType": "BILLABILITY",
+                "dashboardPinToTop": false,
+                "timeTrackingManual": true
+            },
+            "status": "ACTIVE"
+        },
+        "billable": true,
+        "task": null,
+        "project": {
+            "id": "5b319348b0798759ff77ec36",
+            "name": "Esquadrão Operação",
+            "hourlyRate": null,
+            "clientId": "5ac3db23b07987197abef1a9",
+            "workspaceId": "5ab54394b079877ff6187947",
+            "billable": true,
+            "memberships": [
+                {
+                    "userId": "5ab54464b079877ff6187963",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                },
+                {
+                    "userId": "5ac3e3ddb07987197abef25c",
+                    "hourlyRate": null,
+                    "targetId": "5b319348b0798759ff77ec36",
+                    "membershipType": "PROJECT",
+                    "membershipStatus": "ACTIVE"
+                }
+            ],
+            "color": "#009688",
+            "estimate": {
+                "estimate": "PT0S",
+                "type": "AUTO"
+            },
+            "archived": false,
+            "duration": "PT4228H12M42S",
+            "clientName": "Brasilcap",
+            "public": false
+        },
+        "timeInterval": {
+            "start": "2019-02-14T15:30:05Z",
+            "end": "2019-02-14T20:15:05Z",
+            "duration": "PT4H45M"
+        },
+        "workspaceId": "5ab54394b079877ff6187947",
+        "totalBillable": null,
+        "hourlyRate": null,
+        "isLocked": false,
+        "projectId": "5b319348b0798759ff77ec36"
+    }
+]
