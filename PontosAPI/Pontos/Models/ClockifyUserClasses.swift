@@ -9,8 +9,33 @@
 import Foundation
 
 // header da requisição
-struct ClockifyUserHeader: Codable {
-    let xAPIKey: String // x-api-key
+
+// guardando email e api key
+struct ClockifyUserHeader {
+    static let (emailUser, xAPIKey) = ("email", "key")
+    static let userSessionKey = "com.save.usersession"
+    
+    struct Model {
+        var email: String?
+        var key: String?
+        
+        init(_ json: [String: String]) {
+            self.email = json[emailUser]
+            self.key = json[xAPIKey]
+        }
+    }
+    
+    static var saveEmailAndxAPIKey = { (email: String, key: String) in
+        UserDefaults.standard.set([emailUser: email, xAPIKey: key], forKey: userSessionKey)
+    }
+    
+    static var getEmailAndxAPIKey = { _ -> Model in
+        return Model((UserDefaults.standard.value(forKey: userSessionKey) as? [String: String]) ?? [:])
+    }(())
+    
+    static func clearUserData(){
+        UserDefaults.standard.removeObject(forKey: userSessionKey)
+    }
 }
 
 struct ClockifyUser: Codable{

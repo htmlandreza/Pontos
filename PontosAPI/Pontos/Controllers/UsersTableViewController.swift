@@ -11,7 +11,13 @@ import UIKit
 class UsersTableViewController: UITableViewController {
     
     var users: [ClockifyUser] = []
-    // var projects: [Projects]
+    
+    var label: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.textColor = UIColor(ciColor: .blue)
+        return label
+    }()
     
     // filtro
     let searchController = UISearchController(searchResultsController: nil)
@@ -19,18 +25,12 @@ class UsersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // search
-        /*
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        searchController.searchBar.tintColor = .white
-        searchController.searchBar.barTintColor = .white
-        navigationItem.searchController = searchController
-        searchController.searchBar.delegate = self
-        */
+        label.text = "Carregando funcionários..."
         
-        //loadUsers()
+        // chamando API
         loadUsers()
+        
+        
     }
     
     // passar informações pra outra tela
@@ -38,10 +38,10 @@ class UsersTableViewController: UITableViewController {
         let viewController = segue.destination as! UserDetailViewController // tela que vai apresentar
         let user = users[tableView.indexPathForSelectedRow!.row]
         viewController.user = user
-        
     }
     
     public func loadUsers(){
+        // header da requisição
         let headers = [
             "x-api-key": "XJzUp/FcmBU8oozz",
             "Content-Type": "application/json",
@@ -68,52 +68,25 @@ class UsersTableViewController: UITableViewController {
                     if let data = data{
                         self.users = try! JSONDecoder().decode([ClockifyUser].self, from: data)
                         
-        /* // requisição
-            let allObjects = try JSONSerialization.jsonObject(with: data, options: []) as? [[String:Any]]
-
-            for object in allObjects! {
-
-                let id = object["id"] as! String
-                let email = object["email"] as! String
-                let name = object["name"] as! String
-                let status = object["status"] as! String
-
-                let user = ClockifyUser.init(id: id, email: email, name: name, status: status)
-                self.users.append(user)
-
-            } */
-                        
                         DispatchQueue.main.async {
-                            // recarrega
+                            // recarrega e ordena
                             self.filterList()
-                            //self.tableView.reloadData()
                         }
-                        
-                        
                     }
                 } catch let parseError as NSError {
                     print("Error with Json: \(parseError)")
                 }
             }
-        })
+        }) // fecha dataTask
         dataTask.resume()
-    }
+    } // fecha loadUsers()
     
-    func filterList() { // should probably be called sort and not filter
-        users.sort() { $0.name < $1.name } // sort the fruit by name
-        self.tableView.reloadData(); // notify the table view the data has changed
+    func filterList() {
+        users.sort() { $0.name < $1.name } // Ordena por nome
+        self.tableView.reloadData(); // recarrega
     }
-    
-    /*
-     // puxando do json local
-    func loadUsers() {
-        let fileURL = Bundle.main.url(forResource: "users.json", withExtension: nil)!
-        let jsonData = try! Data(contentsOf: fileURL)
-        do {
-            users = try! JSONDecoder().decode([ClockifyUser].self, from: jsonData)
-        }
-    }
-    */
+
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -132,7 +105,7 @@ class UsersTableViewController: UITableViewController {
     
     // número de linhas por sessão
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        tableView.backgroundView = users.count == 0 ? label : nil
         return users.count
     }
     
@@ -146,6 +119,22 @@ class UsersTableViewController: UITableViewController {
         cell.prepare(with: user) // puxando do UsersTableViewCell
         
         return cell
+    }
+    
+    @IBAction func validAPIKey(_ sender: UIButton) {
+        let modalAPIKey = storyboard?.instantiateViewController(withIdentifier: "ApiKeyViewController") as! ApiKeyViewController
+        modalAPIKey.modalPresentationStyle = .overCurrentContext
+        modalAPIKey.reference = self
+        present(modalAPIKey, animated: true, completion: nil)
+        self.tableView.reloadData();
+    }
+    
+    func changeUserAPI(email: String, apiKey: String){
+        
+        ClockifyUserHeader.saveEmailAndxAPIKey(email, apiKey)
+        self.tableView.reloadData();
+        let value = ClockifyUserHeader.getEmailAndxAPIKey
+        print (value)
     }
     
     /*
@@ -208,3 +197,11 @@ extension UsersTableViewController: UISearchResultsUpdating, UISearchBarDelegate
     }
 }
 */
+
+extension UsersTableViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        return true
+    }
+}
+

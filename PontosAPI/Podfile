@@ -6,6 +6,6 @@ target 'Pontos' do
   use_frameworks!
 
   # Pods for Pontos
-	pod 'Alamofire', '~> 4.8.0'
+	#pod 'Alamofire', '~> 4.8.0'
 
 end

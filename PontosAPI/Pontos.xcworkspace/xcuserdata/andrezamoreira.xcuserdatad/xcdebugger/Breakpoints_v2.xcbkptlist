@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pontos/Controllers/UserDetailViewController.swift"
-            timestampString = "575869336.669464"
+            timestampString = "575956641.033336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,119 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pontos/Controllers/UserDetailViewController.swift"
-            timestampString = "575869464.738734"
+            timestampString = "575956641.034102"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "UserDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.startTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956411.6020761"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.startTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956411.6065561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.startTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956411.6102819"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.startTextField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956411.613517"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Pontos.UserDetailViewController"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956411.616567"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1420">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Pontos.UserDetailViewController&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956411.6193531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "1334">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/UserDetailViewController.swift"
+            timestampString = "575956641.034703"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "UserDetailViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,29 +150,231 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pontos/Controllers/UserDetailViewController.swift"
-            timestampString = "575869501.838277"
+            timestampString = "575956641.035279"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "UserDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.stopTextField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956410.730933"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.stopTextField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956410.734304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.stopTextField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956410.737746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.stopTextField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956410.740505"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Pontos.UserDetailViewController"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956410.743646"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1528">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pontos.UserDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Pontos.UserDetailViewController&gt;"
+                  moduleName = "Pontos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrezamoreira/Documents/GIT/Pontos/PontosAPI/Pontos/Controllers/UserDetailViewController.swift"
+                  timestampString = "575956410.7470649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "1442">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/ApiKeyViewController.swift"
+            timestampString = "575956641.0358551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "close(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/ApiKeyViewController.swift"
+            timestampString = "575956641.035944"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/UserDetailViewController.swift"
+            timestampString = "575956641.036021"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "loadTimes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/UserDetailViewController.swift"
+            timestampString = "575956641.036469"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "loadTimes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/UserDetailViewController.swift"
+            timestampString = "575956641.0369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "loadTimes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/UserDetailViewController.swift"
+            timestampString = "575956641.0372519"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "loadTimes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/Controllers/UserDetailViewController.swift"
+            timestampString = "575956641.037565"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "loadTimes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pontos/AppDelegate.swift"
+            timestampString = "575956641.037874"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "UserDetailViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pontos/Controllers/UserDetailViewController.swift"
-            timestampString = "575869516.635868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "UserDetailViewController"
-            landmarkType = "3">
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

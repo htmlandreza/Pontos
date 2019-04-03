@@ -28,20 +28,10 @@ class UsersTableViewCell: UITableViewCell {
     // preprando célula
     // prepara o usuário que a tableView está preenchendo naquela célula
     func prepare(with user: ClockifyUser){
+        // itens da cell
         nameLabel.text = (user.name)
         emailLabel.text = ("E-mail: \(user.email)")
-        //projectsLabel.text = loadingProjects(with: user, MembershipsUsers, Projects)
-        
-        
-        
     }
-    
-    //    func loadingProjects(with user: Users, _ membership: MembershipsUsers, _ project: Projects){
-    //        if membership.membershipType == "PROJECT" {
-    //            print("\(project.name)")
-    //        }
-    //    }
-    
 }
 
 
