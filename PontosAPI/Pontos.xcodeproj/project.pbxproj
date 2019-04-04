@@ -29,6 +29,7 @@
 		257DEBA02252831700682C2F /* clockify.png in Resources */ = {isa = PBXBuildFile; fileRef = 257DEB9D2252831700682C2F /* clockify.png */; };
 		257DEBA22252865800682C2F /* ClockifyUserClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DEBA12252865800682C2F /* ClockifyUserClasses.swift */; };
 		257DEBA42252874500682C2F /* ClockifyTimeEntriesInRangeClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DEBA32252874500682C2F /* ClockifyTimeEntriesInRangeClasses.swift */; };
+		25F9C4712255647600FA35A5 /* TimerTrackerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9C4702255647600FA35A5 /* TimerTrackerTableViewCell.swift */; };
 		DAD164A268888E92B810824A /* Pods_Pontos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC3551A5E881A3875042D7C /* Pods_Pontos.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		257DEB9D2252831700682C2F /* clockify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clockify.png; path = ../../../imagens/clockify.png; sourceTree = "<group>"; };
 		257DEBA12252865800682C2F /* ClockifyUserClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockifyUserClasses.swift; sourceTree = "<group>"; };
 		257DEBA32252874500682C2F /* ClockifyTimeEntriesInRangeClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockifyTimeEntriesInRangeClasses.swift; sourceTree = "<group>"; };
+		25F9C4702255647600FA35A5 /* TimerTrackerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerTrackerTableViewCell.swift; sourceTree = "<group>"; };
 		5FE15C4CB51F549D963FF79A /* Pods-Pontos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontos.release.xcconfig"; path = "Target Support Files/Pods-Pontos/Pods-Pontos.release.xcconfig"; sourceTree = "<group>"; };
 		F331AF61EED72D82422EDB03 /* Pods-Pontos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontos.debug.xcconfig"; path = "Target Support Files/Pods-Pontos/Pods-Pontos.debug.xcconfig"; sourceTree = "<group>"; };
 		FFC3551A5E881A3875042D7C /* Pods_Pontos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				2535ADC0224E541C00BB9483 /* ApiKeyViewController.swift */,
+				25F9C4702255647600FA35A5 /* TimerTrackerTableViewCell.swift */,
 				25225913224D5B1C0039A369 /* TimerTrackerViewController.swift */,
 				25225911224D4B140039A369 /* UserDetailViewController.swift */,
 				1EFC88D0224DA65F00C5BAE8 /* UsersTableViewCell.swift */,
@@ -279,6 +282,7 @@
 				25225914224D5B1C0039A369 /* TimerTrackerViewController.swift in Sources */,
 				252258F1224D3A040039A369 /* ViewController.swift in Sources */,
 				2535ADC1224E541C00BB9483 /* ApiKeyViewController.swift in Sources */,
+				25F9C4712255647600FA35A5 /* TimerTrackerTableViewCell.swift in Sources */,
 				252258EF224D3A040039A369 /* AppDelegate.swift in Sources */,
 				25225912224D4B140039A369 /* UserDetailViewController.swift in Sources */,
 				257DEBA22252865800682C2F /* ClockifyUserClasses.swift in Sources */,
@@ -432,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SCW2ASFJ5;
 				INFOPLIST_FILE = Pontos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +445,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5SCW2ASFJ5;
 				INFOPLIST_FILE = Pontos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amoreira.Pontos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -17,9 +17,9 @@
 		31ADA8ACD0A00DE4740ADD9F88855EAD /* Pods-Pontos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pontos-acknowledgements.plist"; sourceTree = "<group>"; };
 		6801CD06FC5A397B35295E3E2DDA8F3A /* Pods-Pontos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pontos.modulemap"; sourceTree = "<group>"; };
 		84B4E8E69D9A10FC98C61C326F0B1A63 /* Pods-Pontos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pontos-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7CD6AFE903C670ABA2347F852F3266C /* Pods-Pontos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pontos-Info.plist"; sourceTree = "<group>"; };
-		B60FE699B8E96AF459FF87E27B2646B9 /* Pods_Pontos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pontos.framework; path = "Pods-Pontos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60FE699B8E96AF459FF87E27B2646B9 /* Pods_Pontos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2CBE498AA65911FCAC00A32729D2F3 /* Pods-Pontos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pontos-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BE2BAD5086B394FBDA90CBC1BB4329E0 /* Pods-Pontos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pontos.release.xcconfig"; sourceTree = "<group>"; };
 		C61C748604F22AB5B753197E1B4DA9E9 /* Pods-Pontos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pontos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +142,10 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				"pt-BR",
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = DC28056B527196976EFBF497892B5C8E /* Products */;

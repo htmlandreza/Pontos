@@ -8,10 +8,15 @@
 
 import Foundation
 
-//// body da requisição
+////// body da requisição
 //struct ClockifyTimeEntriesBody: Codable {
 //    let start: String
 //    let end: String
+//    
+//    init(start: String, end: String) {
+//        self.start = start
+//        self.end = end
+//    }
 //}
 
 struct ClockifyTimeEntries: Codable {

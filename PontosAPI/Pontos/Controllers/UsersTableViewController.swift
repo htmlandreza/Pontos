@@ -12,15 +12,21 @@ class UsersTableViewController: UITableViewController {
     
     var users: [ClockifyUser] = []
     
+    //var use = ClockifyUserHeader()
+    
+    // dados armazenados localmente - para o header da requisição
+    let emailUser = ClockifyUserHeader.getEmailAndxAPIKey.email
+    let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key
+    
     var label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.textColor = UIColor(ciColor: .blue)
+        //label.textColor = UIColor(ciColor: .blue)
         return label
     }()
     
     // filtro
-    let searchController = UISearchController(searchResultsController: nil)
+    //let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +35,6 @@ class UsersTableViewController: UITableViewController {
         
         // chamando API
         loadUsers()
-        
-        
     }
     
     // passar informações pra outra tela
@@ -38,71 +42,79 @@ class UsersTableViewController: UITableViewController {
         let viewController = segue.destination as! UserDetailViewController // tela que vai apresentar
         let user = users[tableView.indexPathForSelectedRow!.row]
         viewController.user = user
-    }
+    }    
     
     public func loadUsers(){
-        // header da requisição
-        let headers = [
-            "x-api-key": "XJzUp/FcmBU8oozz",
-            "Content-Type": "application/json",
-            "cache-control": "no-cache",
-            "Postman-Token": "9ee3d028-97c2-4ca9-862e-46c31edfef0c"
-        ]
-        
-        let request = NSMutableURLRequest(url: NSURL(string: "https://api.clockify.me/api/workspaces/5ab54394b079877ff6187947/users/")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,  timeoutInterval: 10.0)
-        
-        request.httpMethod = "GET"
-        request.allHTTPHeaderFields = headers
-        
-        
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                print(error)
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse)
-                
-                do {
-                    if let data = data{
-                        self.users = try! JSONDecoder().decode([ClockifyUser].self, from: data)
-                        
-                        DispatchQueue.main.async {
-                            // recarrega e ordena
-                            self.filterList()
-                        }
-                    }
-                } catch let parseError as NSError {
-                    print("Error with Json: \(parseError)")
-                }
+        if keyUser == nil {
+            self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
+            DispatchQueue.main.async {
+                self.filterList()
             }
-        }) // fecha dataTask
-        dataTask.resume()
+        }
+            // usuário identificado
+        else {
+            let company = "5ab54394b079877ff6187947"
+            let headers = [
+               // "x-api-key": "\(keyUser)", // usuário identificado APIKey
+                "x-api-key": "XJzUp/FcmBU8oozz", // apikey do gilmar
+                "Content-Type": "application/json",
+                "cache-control": "no-cache",
+                "Postman-Token": "9ee3d028-97c2-4ca9-862e-46c31edfef0c"
+            ]
+            
+            let request = NSMutableURLRequest(url: NSURL(string: "https://api.clockify.me/api/workspaces/\(company)/users/")! as URL,
+                                              cachePolicy: .useProtocolCachePolicy,  timeoutInterval: 10.0)
+            
+            request.httpMethod = "GET"
+            request.allHTTPHeaderFields = headers
+            
+            let session = URLSession.shared
+            let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+                if (error != nil) {
+                    print("Erro: \(error)")
+                } else {
+                    if let httpStatus = response as? HTTPURLResponse{
+                        // simulandi erro
+                        if httpStatus.statusCode == 200 {
+                            print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
+                            print("E-mail: \(self.emailUser) // Key: \(self.keyUser)")
+                            do {
+                                if let data = data{
+                                    self.users = try! JSONDecoder().decode([ClockifyUser].self, from: data)
+                                    // recarrega e ordena
+                                    DispatchQueue.main.async {
+                                        self.filterList()
+                                    }
+                                }
+                            } catch let parseError as NSError {
+                                print("Error with Json: \(parseError)")
+                            }
+                        } else {
+                            print("Status Code do UsersTableViewController = \(httpStatus.statusCode)")
+                            self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
+                        }
+                        
+                    }
+                }
+            }) // fecha dataTask
+            dataTask.resume()
+        }
     } // fecha loadUsers()
     
     func filterList() {
         users.sort() { $0.name < $1.name } // Ordena por nome
         self.tableView.reloadData(); // recarrega
     }
-
-   
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // alerta com volta para o início
+    func modalAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let Action = UIAlertAction(title: "Identificar-se", style: .default, handler: { (action) -> Void in self.openModal()}  )
+        alert.addAction(Action)
+        self.present(alert, animated: true){}
     }
-    
-    // MARK: - Table view data source
-    
-    /*
-     // quantidade de sessães da tableView
-     override func numberOfSections(in tableView: UITableView) -> Int {
-     // #warning Incomplete implementation, return the number of sections
-     return 0
-     }
-     */
-    
+
     // número de linhas por sessão
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.backgroundView = users.count == 0 ? label : nil
@@ -122,81 +134,28 @@ class UsersTableViewController: UITableViewController {
     }
     
     @IBAction func validAPIKey(_ sender: UIButton) {
+        openModal()
+    }
+    
+    //FIXME: bug
+    func changeUserAPI(email: String, apiKey: String){
+        ClockifyUserHeader.saveEmailAndxAPIKey(email, apiKey)
+        
+        let value = ClockifyUserHeader.getEmailAndxAPIKey
+        print (value)
+        self.tableView.reloadData();
+        //loadUsers()
+        
+    }
+    
+    func openModal(){
         let modalAPIKey = storyboard?.instantiateViewController(withIdentifier: "ApiKeyViewController") as! ApiKeyViewController
         modalAPIKey.modalPresentationStyle = .overCurrentContext
         modalAPIKey.reference = self
         present(modalAPIKey, animated: true, completion: nil)
         self.tableView.reloadData();
     }
-    
-    func changeUserAPI(email: String, apiKey: String){
-        
-        ClockifyUserHeader.saveEmailAndxAPIKey(email, apiKey)
-        self.tableView.reloadData();
-        let value = ClockifyUserHeader.getEmailAndxAPIKey
-        print (value)
-    }
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-}
-
-/*
-extension UsersTableViewController: UISearchResultsUpdating, UISearchBarDelegate {
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        service()
-        tableView.reloadData()
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        service(filtering: searchBar.text)
-        tableView.reloadData()
-    }
-}
-*/
+} // fim da classe UsersTableViewController
 
 extension UsersTableViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

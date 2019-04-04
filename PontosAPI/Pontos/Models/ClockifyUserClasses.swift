@@ -13,11 +13,12 @@ import Foundation
 // guardando email e api key
 struct ClockifyUserHeader {
     static let (emailUser, xAPIKey) = ("email", "key")
+    
     static let userSessionKey = "com.save.usersession"
     
     struct Model {
-        var email: String?
-        var key: String?
+        var email: String? = "iblue"
+        var key: String? = "123"
         
         init(_ json: [String: String]) {
             self.email = json[emailUser]
@@ -27,6 +28,7 @@ struct ClockifyUserHeader {
     
     static var saveEmailAndxAPIKey = { (email: String, key: String) in
         UserDefaults.standard.set([emailUser: email, xAPIKey: key], forKey: userSessionKey)
+        UserDefaults.standard.synchronize()
     }
     
     static var getEmailAndxAPIKey = { _ -> Model in

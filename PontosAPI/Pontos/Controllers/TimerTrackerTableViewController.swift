@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TimerTrackerViewController: UITableViewController {
+class TimerTrackerTableViewController: UITableViewController {
     
     var userDetail: [ClockifyTimeEntries] = []
     
@@ -18,15 +18,6 @@ class TimerTrackerViewController: UITableViewController {
     @IBOutlet weak var datesLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
-    // tablew view times
-    @IBOutlet weak var datesTimeLabel: UILabel!
-    @IBOutlet weak var descriptionTimeLabel: UILabel!
-    @IBOutlet weak var durationTimeLabel: UILabel!
-    
-    @IBOutlet weak var timesTableView: UITableView!
-    
-    
-    
     public var startDateInfoValue: String? = nil // tratado
     public var stopDateInfoValue: String? = nil
     public var emailValidUser: String? = nil
@@ -35,7 +26,7 @@ class TimerTrackerViewController: UITableViewController {
     public var idValidUser: String? = nil
     public var startValue: String? = nil // sem ser tratado
     public var stopValue: String? = nil
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // carrega dados
@@ -50,7 +41,7 @@ class TimerTrackerViewController: UITableViewController {
         //nameLabel.text = (user.name)
         //print(emailValidUser, keyValidUser)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -59,7 +50,7 @@ class TimerTrackerViewController: UITableViewController {
     func loadTimes(){
         
         print(emailValidUser!, keyValidUser!)
-       
+        
         let company = "5ab54394b079877ff6187947"
         let headers = [
             "x-api-key": "\(keyValidUser!)", // usuário identificado APIKey
@@ -116,6 +107,83 @@ class TimerTrackerViewController: UITableViewController {
         
     }
     
+    // alimenta a tabela
+    // método chamado sempre quando for apresentar uma tabela, preparando
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // tratando como uma UsersTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UsersTableViewCell
+        
+        let user = userDetail[indexPath.row] // recuperando dados por usuário
+        //cell.prepare(with: user) // puxando do UsersTableViewCell
+        
+        return cell
+    }
+    
+
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

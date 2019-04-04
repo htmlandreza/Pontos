@@ -32,6 +32,8 @@ class UsersTableViewCell: UITableViewCell {
         nameLabel.text = (user.name)
         emailLabel.text = ("E-mail: \(user.email)")
     }
+    
+    
 }
 
 
