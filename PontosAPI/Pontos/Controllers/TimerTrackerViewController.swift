@@ -8,25 +8,19 @@
 
 import UIKit
 
-class TimerTrackerViewController: UITableViewController {
+class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var userDetail: [ClockifyTimeEntries] = []
-    
-    //var users: [ClockifyUser] = []
     var user: ClockifyUser!
     
+    // MARK: componentes da tela
     @IBOutlet weak var datesLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    
-    // tablew view times
-    @IBOutlet weak var datesTimeLabel: UILabel!
-    @IBOutlet weak var descriptionTimeLabel: UILabel!
-    @IBOutlet weak var durationTimeLabel: UILabel!
-    
+    @IBOutlet weak var daysLabel: UILabel!
+    @IBOutlet weak var hoursLabel: UILabel!
     @IBOutlet weak var timesTableView: UITableView!
     
-    
-    
+    // MARK: variáveis que recebem valor da tela UserDatailViewController
     public var startDateInfoValue: String? = nil // tratado
     public var stopDateInfoValue: String? = nil
     public var emailValidUser: String? = nil
@@ -35,7 +29,8 @@ class TimerTrackerViewController: UITableViewController {
     public var idValidUser: String? = nil
     public var startValue: String? = nil // sem ser tratado
     public var stopValue: String? = nil
-
+    
+    // carga inicial
     override func viewDidLoad() {
         super.viewDidLoad()
         // carrega dados
@@ -43,24 +38,14 @@ class TimerTrackerViewController: UITableViewController {
         nameLabel.text = nameValidUser!
         
         loadTimes()
-    }
-    
-    func prepare(with user: ClockifyUser){
-        // itens da cell
-        //nameLabel.text = (user.name)
-        //print(emailValidUser, keyValidUser)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func loadTimes(){
         
+    }
+    
+    // MARK: requisição - correspondente ao ClockifyTimeEntries
+    func loadTimes(){
         print(emailValidUser!, keyValidUser!)
-       
-        let company = "5ab54394b079877ff6187947"
+        
+        let company = "5ab54394b079877ff6187947" // id da iBlue
         let headers = [
             "x-api-key": "\(keyValidUser!)", // usuário identificado APIKey
             "Content-Type": "application/json",
@@ -69,7 +54,7 @@ class TimerTrackerViewController: UITableViewController {
         ]
         //print(headers)
         
-        // tratar os parâmetros de data
+        // tratar os parâmetros de data - recebido da tela UserDetail
         let parameters = [
             "start": "\(startValue!)T00:00:00.000Z",
             "end": "\(stopValue!)T23:59:59.999Z"
@@ -80,7 +65,7 @@ class TimerTrackerViewController: UITableViewController {
         // montando requisição
         let request = NSMutableURLRequest(url: NSURL(string: "https://api.clockify.me/api/workspaces/\(company)/timeEntries/user/\(idValidUser!)/entriesInRange")! as URL,
                                           cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
+                                          timeoutInterval: 20.0)
         //print (request)
         request.httpMethod = "POST"
         request.allHTTPHeaderFields = headers
@@ -97,25 +82,53 @@ class TimerTrackerViewController: UITableViewController {
                 if let httpStatus = response as? HTTPURLResponse{
                     // retorno da requisição com todos os parâmetros tratados do usuário identificado
                     if httpStatus.statusCode == 200 {
+                        print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
+                        print("Requisição inicial com o dados locais. /nE-mail: \(self.emailValidUser) // Key: \(self.keyValidUser)")
                         do {
                             if let data = data{
                                 self.userDetail = try! JSONDecoder().decode([ClockifyTimeEntries].self, from: data)
                                 print (self.userDetail)
+                                DispatchQueue.main.async {
+                                    self.timesTableView.reloadData()
+                                    let total = self.userDetail.count
+                                    let dias = total / 2
+                                    let horas = dias * 8
+                                    
+                                    self.daysLabel.text = String(dias) + " dias registrados"
+                                    self.hoursLabel.text = String(horas) + " horas obrigatórias"
+                                }
                             }
                         } catch let parseError as NSError {
                             print("Error with Json: \(parseError)")
                         }
                     } else {
+                        // se status code != 200
                         print("Status Code do TimerTrackerViewController = \(httpStatus.statusCode)")
+                        // TODO: incuir alerta
                         //self.homeAlert(title: "API Key inválida", message: "Identifique-se com e-mail e API Key válida.")
                     }
                 }
             }
         })
         dataTask.resume()
-        
+    } // fecha loadTimes()
+    
+    // MARK: obrigatório - número de linhas por sessão
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       //tableView.backgroundView = users.count == 0 ? label : nil
+        return userDetail.count
     }
     
-
-}
-
+    // MARK: obrigatório - alimenta a tabela
+    // método chamado sempre quando for apresentar uma tabela, preparando
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // tratando como uma UsersTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TimerTrackerTableViewCell
+        
+        let user = userDetail[indexPath.row] // recuperando dados por usuário
+        cell.prepare(with: user) // puxando do UsersTableViewCell
+        
+        return cell
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {return true}}

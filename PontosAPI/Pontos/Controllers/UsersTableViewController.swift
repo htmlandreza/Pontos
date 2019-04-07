@@ -12,8 +12,7 @@ class UsersTableViewController: UITableViewController {
     
     var users: [ClockifyUser] = []
     
-    //var use = ClockifyUserHeader()
-    
+    // FIXME: Dados armazenados localmente
     // dados armazenados localmente - para o header da requisição
     let emailUser = ClockifyUserHeader.getEmailAndxAPIKey.email
     let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key
@@ -25,8 +24,9 @@ class UsersTableViewController: UITableViewController {
         return label
     }()
     
-    // filtro
-    //let searchController = UISearchController(searchResultsController: nil)
+    
+    // TODO: filtro da tela principal
+    // let searchController = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +44,7 @@ class UsersTableViewController: UITableViewController {
         viewController.user = user
     }    
     
+    // MARK: requisição
     public func loadUsers(){
         if keyUser == nil {
             self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
@@ -71,42 +72,45 @@ class UsersTableViewController: UITableViewController {
             let session = URLSession.shared
             let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
                 if (error != nil) {
-                    print("Erro: \(error)")
+                    print("Erro: \(error!)")
                 } else {
                     if let httpStatus = response as? HTTPURLResponse{
-                        // simulandi erro
                         if httpStatus.statusCode == 200 {
                             print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
-                            print("E-mail: \(self.emailUser) // Key: \(self.keyUser)")
+                            print("Requisição inicial com o dados locais. /nE-mail: \(self.emailUser!) // Key: \(self.keyUser!)")
                             do {
                                 if let data = data{
                                     self.users = try! JSONDecoder().decode([ClockifyUser].self, from: data)
                                     // recarrega e ordena
                                     DispatchQueue.main.async {
                                         self.filterList()
+                                        //self.tableView.reloadData();
                                     }
                                 }
-                            } catch let parseError as NSError {
+                            }
+                            catch let parseError as NSError {
                                 print("Error with Json: \(parseError)")
                             }
-                        } else {
+                        }
+                        // se status code != 200
+                        else {
                             print("Status Code do UsersTableViewController = \(httpStatus.statusCode)")
                             self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
-                        }
-                        
-                    }
+                        } // fecha else
+                    } // fecha httpurlresponse
                 }
             }) // fecha dataTask
             dataTask.resume()
         }
     } // fecha loadUsers()
     
+    // TODO: filtro
     func filterList() {
         users.sort() { $0.name < $1.name } // Ordena por nome
         self.tableView.reloadData(); // recarrega
     }
     
-    // alerta com volta para o início
+    // MARK: alerta
     func modalAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
@@ -115,13 +119,13 @@ class UsersTableViewController: UITableViewController {
         self.present(alert, animated: true){}
     }
 
-    // número de linhas por sessão
+    // MARK: obrigatório - número de linhas por sessão
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.backgroundView = users.count == 0 ? label : nil
         return users.count
     }
     
-    // alimenta a tabela
+    // MARK: obrigatório - alimenta a tabela
     // método chamado sempre quando for apresentar uma tabela, preparando
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // tratando como uma UsersTableViewCell
@@ -133,34 +137,39 @@ class UsersTableViewController: UITableViewController {
         return cell
     }
     
+    // FIXME: verificar este botão
     @IBAction func validAPIKey(_ sender: UIButton) {
         openModal()
     }
     
-    //FIXME: bug
+    //FIXME: Não está atualizando na mesma hora
     func changeUserAPI(email: String, apiKey: String){
-        ClockifyUserHeader.saveEmailAndxAPIKey(email, apiKey)
-        
-        let value = ClockifyUserHeader.getEmailAndxAPIKey
-        print (value)
-        self.tableView.reloadData();
-        //loadUsers()
-        
+        print("Recebido: " + email, apiKey )
+        ClockifyUserHeader.clearUserData.self()
+        DispatchQueue.main.async {
+            
+            self.tableView.reloadData();
+            ClockifyUserHeader.saveEmailAndxAPIKey(email, apiKey)
+            
+            var value = ClockifyUserHeader.getEmailAndxAPIKey.email
+            print ("Enviado \(value)")
+        }
     }
     
+    // MARK: modal
     func openModal(){
         let modalAPIKey = storyboard?.instantiateViewController(withIdentifier: "ApiKeyViewController") as! ApiKeyViewController
         modalAPIKey.modalPresentationStyle = .overCurrentContext
         modalAPIKey.reference = self
+                // recarrega
+                DispatchQueue.main.async {
+                    self.tableView.reloadData();
+                }
         present(modalAPIKey, animated: true, completion: nil)
-        self.tableView.reloadData();
+
     }
 } // fim da classe UsersTableViewController
 
 extension UsersTableViewController: UITextFieldDelegate{
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        return true
-    }
-}
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {return true}}
 

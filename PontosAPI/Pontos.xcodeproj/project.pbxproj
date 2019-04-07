@@ -9,21 +9,17 @@
 /* Begin PBXBuildFile section */
 		1E7A3792225300730045171B /* iblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A3791225300730045171B /* iblue.png */; };
 		1EFC88D1224DA65F00C5BAE8 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFC88D0224DA65F00C5BAE8 /* UsersTableViewCell.swift */; };
+		251A9B012257D20D004D3584 /* BrazilianHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A9B002257D20D004D3584 /* BrazilianHolidays.swift */; };
+		251A9B052257D2FA004D3584 /* brazilianHolidays.json in Resources */ = {isa = PBXBuildFile; fileRef = 251A9B042257D2FA004D3584 /* brazilianHolidays.json */; };
 		252258EF224D3A040039A369 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252258EE224D3A040039A369 /* AppDelegate.swift */; };
 		252258F1224D3A040039A369 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252258F0224D3A040039A369 /* ViewController.swift */; };
 		252258F4224D3A040039A369 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252258F2224D3A040039A369 /* Main.storyboard */; };
 		252258F9224D3A060039A369 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252258F7224D3A060039A369 /* LaunchScreen.storyboard */; };
-		2522590A224D48E70039A369 /* clients.json in Resources */ = {isa = PBXBuildFile; fileRef = 25225905224D48E70039A369 /* clients.json */; };
-		2522590B224D48E70039A369 /* entriesInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 25225906224D48E70039A369 /* entriesInRange.json */; };
-		2522590C224D48E70039A369 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 25225907224D48E70039A369 /* projects.json */; };
-		2522590D224D48E70039A369 /* userGroups.json in Resources */ = {isa = PBXBuildFile; fileRef = 25225908224D48E70039A369 /* userGroups.json */; };
-		2522590E224D48E70039A369 /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = 25225909224D48E70039A369 /* users.json */; };
 		25225910224D4A370039A369 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2522590F224D4A370039A369 /* UsersTableViewController.swift */; };
 		25225912224D4B140039A369 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25225911224D4B140039A369 /* UserDetailViewController.swift */; };
 		25225914224D5B1C0039A369 /* TimerTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25225913224D5B1C0039A369 /* TimerTrackerViewController.swift */; };
 		2522591A224E4C150039A369 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25225919224E4C150039A369 /* Assets.xcassets */; };
 		2535ADC1224E541C00BB9483 /* ApiKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2535ADC0224E541C00BB9483 /* ApiKeyViewController.swift */; };
-		2535ADC9224E6FBB00BB9483 /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 2535ADC8224E6FBB00BB9483 /* tasks.json */; };
 		257231422253D2BE00C85A6D /* user_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 257231412253D2BE00C85A6D /* user_blue.png */; };
 		257DEB9F2252831700682C2F /* clockify_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 257DEB9C2252831700682C2F /* clockify_mini.png */; };
 		257DEBA02252831700682C2F /* clockify.png in Resources */ = {isa = PBXBuildFile; fileRef = 257DEB9D2252831700682C2F /* clockify.png */; };
@@ -36,23 +32,19 @@
 /* Begin PBXFileReference section */
 		1E7A3791225300730045171B /* iblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iblue.png; sourceTree = "<group>"; };
 		1EFC88D0224DA65F00C5BAE8 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		251A9B002257D20D004D3584 /* BrazilianHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilianHolidays.swift; sourceTree = "<group>"; };
+		251A9B042257D2FA004D3584 /* brazilianHolidays.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brazilianHolidays.json; sourceTree = "<group>"; };
 		252258EB224D3A040039A369 /* Pontos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pontos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		252258EE224D3A040039A369 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		252258F0224D3A040039A369 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		252258F3224D3A040039A369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		252258F8224D3A060039A369 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252258FA224D3A060039A369 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25225905224D48E70039A369 /* clients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clients.json; sourceTree = "<group>"; };
-		25225906224D48E70039A369 /* entriesInRange.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = entriesInRange.json; sourceTree = "<group>"; };
-		25225907224D48E70039A369 /* projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = projects.json; sourceTree = "<group>"; };
-		25225908224D48E70039A369 /* userGroups.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userGroups.json; sourceTree = "<group>"; };
-		25225909224D48E70039A369 /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
 		2522590F224D4A370039A369 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersTableViewController.swift; path = Pontos/Controllers/UsersTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		25225911224D4B140039A369 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDetailViewController.swift; path = Pontos/Controllers/UserDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		25225913224D5B1C0039A369 /* TimerTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTrackerViewController.swift; sourceTree = "<group>"; };
 		25225919224E4C150039A369 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2535ADC0224E541C00BB9483 /* ApiKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeyViewController.swift; sourceTree = "<group>"; };
-		2535ADC8224E6FBB00BB9483 /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		257231412253D2BE00C85A6D /* user_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_blue.png; path = ../../../imagens/user_blue.png; sourceTree = "<group>"; };
 		257DEB9C2252831700682C2F /* clockify_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clockify_mini.png; path = ../../../imagens/clockify_mini.png; sourceTree = "<group>"; };
 		257DEB9D2252831700682C2F /* clockify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clockify.png; path = ../../../imagens/clockify.png; sourceTree = "<group>"; };
@@ -111,16 +103,11 @@
 		25225900224D3A710039A369 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				257231412253D2BE00C85A6D /* user_blue.png */,
-				1E7A3791225300730045171B /* iblue.png */,
+				251A9B042257D2FA004D3584 /* brazilianHolidays.json */,
 				257DEB9C2252831700682C2F /* clockify_mini.png */,
 				257DEB9D2252831700682C2F /* clockify.png */,
-				25225905224D48E70039A369 /* clients.json */,
-				25225906224D48E70039A369 /* entriesInRange.json */,
-				25225907224D48E70039A369 /* projects.json */,
-				2535ADC8224E6FBB00BB9483 /* tasks.json */,
-				25225908224D48E70039A369 /* userGroups.json */,
-				25225909224D48E70039A369 /* users.json */,
+				1E7A3791225300730045171B /* iblue.png */,
+				257231412253D2BE00C85A6D /* user_blue.png */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -130,6 +117,7 @@
 			children = (
 				257DEBA12252865800682C2F /* ClockifyUserClasses.swift */,
 				257DEBA32252874500682C2F /* ClockifyTimeEntriesInRangeClasses.swift */,
+				251A9B002257D20D004D3584 /* BrazilianHolidays.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,19 +222,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2522590D224D48E70039A369 /* userGroups.json in Resources */,
 				257DEB9F2252831700682C2F /* clockify_mini.png in Resources */,
-				2522590B224D48E70039A369 /* entriesInRange.json in Resources */,
-				2522590C224D48E70039A369 /* projects.json in Resources */,
 				257231422253D2BE00C85A6D /* user_blue.png in Resources */,
 				252258F9224D3A060039A369 /* LaunchScreen.storyboard in Resources */,
 				1E7A3792225300730045171B /* iblue.png in Resources */,
 				257DEBA02252831700682C2F /* clockify.png in Resources */,
-				2522590E224D48E70039A369 /* users.json in Resources */,
-				2535ADC9224E6FBB00BB9483 /* tasks.json in Resources */,
-				2522590A224D48E70039A369 /* clients.json in Resources */,
 				2522591A224E4C150039A369 /* Assets.xcassets in Resources */,
 				252258F4224D3A040039A369 /* Main.storyboard in Resources */,
+				251A9B052257D2FA004D3584 /* brazilianHolidays.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251A9B012257D20D004D3584 /* BrazilianHolidays.swift in Sources */,
 				1EFC88D1224DA65F00C5BAE8 /* UsersTableViewCell.swift in Sources */,
 				25225914224D5B1C0039A369 /* TimerTrackerViewController.swift in Sources */,
 				252258F1224D3A040039A369 /* ViewController.swift in Sources */,

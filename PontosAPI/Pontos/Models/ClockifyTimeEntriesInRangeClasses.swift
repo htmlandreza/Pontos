@@ -8,23 +8,12 @@
 
 import Foundation
 
-////// body da requisição
-//struct ClockifyTimeEntriesBody: Codable {
-//    let start: String
-//    let end: String
-//    
-//    init(start: String, end: String) {
-//        self.start = start
-//        self.end = end
-//    }
-//}
-
 struct ClockifyTimeEntries: Codable {
     let id: String
     let description: String
     let user: ClockifyUser
     let project: ClockifyProject?
-    let timeInterval : ClockifyTimeInterval
+    let timeInterval: ClockifyTimeInterval
     
     init(id: String, description: String, user: ClockifyUser, project: ClockifyProject, timeInterval : ClockifyTimeInterval) {
         self.id = id

@@ -25,7 +25,7 @@ class UsersTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    // preprando célula
+    // prepando célula
     // prepara o usuário que a tableView está preenchendo naquela célula
     func prepare(with user: ClockifyUser){
         // itens da cell

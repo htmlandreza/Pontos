@@ -21,24 +21,27 @@ class ApiKeyViewController: UIViewController {
     }
     
     @IBAction func chooseApiKey(_ sender: UIButton) {
-////        valor para teste
-//        if apiKeyLabel.text == "" {
-//            apiKeyLabel.text = "XJzUp/FcmBU8oozz"
-//        }
-//        if emailLabel.text == "" {
-//            emailLabel.text = "gfranca@iblueconsulting.com.br"
-//        }
         
-        reference?.changeUserAPI(email: emailLabel.text!, apiKey: apiKeyLabel.text!)
-        let emailUser = ClockifyUserHeader.getEmailAndxAPIKey.email!
-        let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key!
+        var email: String? = ""
+        var apiKey: String? = ""
         
-        print(emailUser, keyUser)
+        email = emailLabel.text
+        apiKey = apiKeyLabel.text
+        
+        ClockifyUserHeader.clearUserData()
+        
+        reference?.changeUserAPI(email: email!, apiKey: apiKey!)
+        
         dismiss(animated: true, completion: nil)
-        
+        view.endEditing(true)
     }
     
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // tirar o foco ao tocar em outras partes da tela
+        view.endEditing(true)
     }
 }

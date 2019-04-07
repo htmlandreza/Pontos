@@ -13,29 +13,33 @@ class UserDetailViewController: UIViewController {
     var user: ClockifyUser!
     var userDetail: [ClockifyTimeEntries] = []
     
+    // FIXME: dados armazenados localmente
     // dados armazenados localmente - para o header da requisição
     let emailUser = ClockifyUserHeader.getEmailAndxAPIKey.email!
     let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key!
   
+    // MARK: componentes do Usuários
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
+    
+    // MARK: componentes da View - consulta dos pontos por intervalo de datas
     @IBOutlet weak var startTextField: UITextField!
     @IBOutlet weak var stopTextField: UITextField!
-    //@IBOutlet weak var startDatePicker: UIDatePicker!
-    //@IBOutlet weak var stopDatePicker: UIDatePicker!
+    @IBOutlet weak var relatorioLabel: UILabel!
+    @IBOutlet weak var startLabel: UILabel!
+    @IBOutlet weak var endLabel: UILabel!
+    @IBOutlet weak var consultButton: UIButton!
     
+    // MARK: datepicker
     let datePicker = UIDatePicker()
     
     var startDateValue: String? = nil
     var stopDateValue: String? = nil
-    
     var startDateInfoValue: String? = nil
     var stopDateInfoValue: String? = nil
-    
     var emailValidUser: String? = nil
     var keyValidUser: String? = nil
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,9 +58,8 @@ class UserDetailViewController: UIViewController {
         // chama a requisição correspondente ao ClockifyTimeEntries
         validEmailSelected()
     }
-    
 
-    // trata o resultado do Status
+    // MARK: trata o resultado da statusLabel
     func statusUser(status: String) -> String {
         // trata o resultado do user.status
         switch user.status {
@@ -66,13 +69,17 @@ class UserDetailViewController: UIViewController {
         }
     }
     
+    // botão Consultar
     @IBAction func generate(_ sender: UIButton) {
-        validEmailSelected()
-        
-        
+        // valida se os intervalos de data então preenchidos
+        if startTextField.text != "" && stopTextField.text != ""{
+            validEmailSelected()
+        } else {
+             homeAlert(title: "Datas vazias", message: "É necessário preencher os dois campos de data.")
+        }
     }
     
-    // passar informações pra outra tela
+    // MARK: prepare - passar informações pra outra tela
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let viewController = segue.destination as? TimerTrackerViewController // tela que vai apresentar
         viewController?.startDateInfoValue = startDateInfoValue
@@ -85,33 +92,33 @@ class UserDetailViewController: UIViewController {
         viewController?.idValidUser = user.id
     }
     
-    
+    // MARK: validação - verifica se o usuário identificado é o mesmo usuário consultado
     func validEmailSelected(){
         if user.email != emailUser {
             // validEmail()
             homeAlert(title: "E-mail do usuário não corresponde", message: "O e-mail do usuário identificado não é correspondente ao e-mail do usuário selecionado. Só é permitido consultar o próprio usuário que foi identificado. Volte ao início e identifique-se.")
-        }
-        else {
-            if startDateValue == nil {
-                startDateValue = "2019-02-01"
+            startTextField.isHidden = true
+            stopTextField.isHidden = true
+            relatorioLabel.text = "Relatório indisponível. Usuário não identificado."
+            startLabel.isHidden = true
+            endLabel.isHidden = true
+            consultButton.isHidden = true
+        } else {
+            if startDateValue == nil || stopDateValue == nil  {
+                startDateValue = "2019-03-01"
+                stopDateValue = "2019-03-02"
+                
+                loadTimes(startValue: startDateValue!, stopValue: stopDateValue!)
+            } else {
+                print ("Preencheu \(startDateValue!)")
+                //loadTimes(startValue: startDateValue!, stopValue: stopDateValue!)
             }
-            if stopDateValue == nil {
-                stopDateValue = "2019-02-01"
-            }
-            loadTimes(startValue: startDateValue!, stopValue: stopDateValue!)
         }
     }
     
-    // carrega a requisição correspondente ao ClockifyTimeEntries
+    // MARK: requisição - correspondente ao ClockifyTimeEntries
     public func loadTimes(startValue: String, stopValue: String){
-        if startDateValue == nil {
-            startDateValue = "2019-02-01"
-        }
-        if stopDateValue == nil {
-            stopDateValue = "2019-02-01"
-        }
-        
-            let company = "5ab54394b079877ff6187947"
+            let company = "5ab54394b079877ff6187947" // id da iBlue
             let headers = [
                 "x-api-key": "\(keyUser)", // usuário identificado APIKey
                 "Content-Type": "application/json",
@@ -122,16 +129,19 @@ class UserDetailViewController: UIViewController {
             
             // tratar os parâmetros de data
             let parameters = [
+                        //2019-03-01
                 "start": "\(startValue)T00:00:00.000Z",
                 "end": "\(stopValue)T23:59:59.999Z"
                 ] as [String : Any]
             
             let postData = try! JSONSerialization.data(withJSONObject: parameters, options: [])
-            
+        
+            // url da requisição
+            let url =  NSURL(string: "https://api.clockify.me/api/workspaces/\(company)/timeEntries/user/\(user.id)/entriesInRange")!
             // montando requisição
-            let request = NSMutableURLRequest(url: NSURL(string: "https://api.clockify.me/api/workspaces/\(company)/timeEntries/user/\(user.id)/entriesInRange")! as URL,
+            let request = NSMutableURLRequest(url: url as URL,
                                               cachePolicy: .useProtocolCachePolicy,
-                                              timeoutInterval: 10.0)
+                                              timeoutInterval: 20.0)
             //print (request)
             request.httpMethod = "POST"
             request.allHTTPHeaderFields = headers
@@ -140,7 +150,7 @@ class UserDetailViewController: UIViewController {
             let session = URLSession.shared
             let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
                 if (error != nil) {
-                    print(error.debugDescription)
+                    print("Erro: \(error!)")
                 } else {
                     let httpResponse = response as? HTTPURLResponse
                     print(httpResponse.debugDescription)
@@ -148,6 +158,8 @@ class UserDetailViewController: UIViewController {
                     if let httpStatus = response as? HTTPURLResponse{
                         // retorno da requisição com todos os parâmetros tratados do usuário identificado
                         if httpStatus.statusCode == 200 {
+                            print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
+                            print("Requisição inicial com o dados locais. /nE-mail: \(self.emailUser) // Key: \(self.keyUser)")
                             do {
                                 if let data = data{
                                     self.userDetail = try! JSONDecoder().decode([ClockifyTimeEntries].self, from: data)
@@ -156,24 +168,25 @@ class UserDetailViewController: UIViewController {
                             } catch let parseError as NSError {
                                 print("Error with Json: \(parseError)")
                             }
-                        } else {
+                        }
+                        // se status code != 200
+                        else {
                             print("Status Code do UserDatail = \(httpStatus.statusCode)")
                             self.homeAlert(title: "API Key inválida", message: "Identifique-se com e-mail e API Key válida.")
                         }
                     }
                 }
-            })
-            dataTask.resume()
-    }
+            })// fecha dataTask
+        dataTask.resume()
+    } // fecha loadTimes()
     
-    // datePicker da consulta do relatório - Start Text Field
+    // MARK: modifica do teclado para o datePicker - Start Text Field
     func startShowDatePicker(){
-        //Formate Date
+        // formate date
         datePicker.datePickerMode = .date
         datePicker.locale = NSLocale(localeIdentifier: "pt_BR") as Locale
         
-        
-        //ToolBar
+        // ToolBar
         let toolbar = UIToolbar();
         toolbar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Pronto", style: .plain, target: self, action: #selector(startDonedatePicker));
@@ -187,6 +200,7 @@ class UserDetailViewController: UIViewController {
         
     }
 
+    // MARK: datepicker - Botão de Finalizar - Start Text Field
     @objc public func startDonedatePicker(){
         // mostrar na textField
         let formatter = DateFormatter()
@@ -205,18 +219,18 @@ class UserDetailViewController: UIViewController {
         print(startDateValue)
     }
     
+    // MARK: datepicker - Botão de Cancelar -  Start Text Field
     @objc func startCancelDatePicker(){
         self.view.endEditing(true)
     }
     
-    // datePicker da consulta do relatório - Stop Text Field
+    // MARK: modifica do teclado para o datePicker - Stop Text Field
     func stopShowDatePicker(){
-        //Formate Date
+        // formate date
         datePicker.datePickerMode = .date
         datePicker.locale = NSLocale(localeIdentifier: "pt_BR") as Locale
         
-        
-        //ToolBar
+        // ToolBar
         let toolbar = UIToolbar();
         toolbar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Pronto", style: .plain, target: self, action: #selector(stopDoneDatePicker));
@@ -230,6 +244,7 @@ class UserDetailViewController: UIViewController {
         
     }
     
+    // MARK: datepicker - Botão de Finalizar - Stop Text Field
     @objc public func stopDoneDatePicker(){
         // mostrar na textField
         let formatter = DateFormatter()
@@ -249,23 +264,35 @@ class UserDetailViewController: UIViewController {
         
     }
     
+    // MARK: datepicker - Botão de Cancelar - Stop Text Field
     @objc func stopCancelDatePicker(){
         self.view.endEditing(true)
     }
     
-    // alerta com volta para o início
+    // MARK: Alerta
+    // FIXME: Bug da volta para a tela inicial, apois isso a navegação para de funcionar
     func homeAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let Action = UIAlertAction(title: "Alterar identificação", style: .default, handler: { _ -> Void in
+        let Action = UIAlertAction(title: "Alterar identificação", style: .default, handler: nil
+            
+        //// volta para a tela inicial
+        //{ _ -> Void in
             // let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let home = self.storyboard?.instantiateViewController(withIdentifier: "UsersTableViewController") as! UsersTableViewController
-            let nextViewController = home
+            //let home = self.storyboard?.instantiateViewController(withIdentifier: "UsersTableViewController") as! UsersTableViewController
+            //let nextViewController = home
             //modalAPIKey.modalPresentationStyle = .overCurrentContext
-            self.present(nextViewController, animated: true, completion: nil)
-        })
+           // self.present(nextViewController, animated: true, completion: nil)
+        //}
+            
+        )
         alert.addAction(Action)
         self.present(alert, animated: true){}
+    }
+    
+    // MARK: tirar o foco ao tocar em outras partes da tela
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }
 

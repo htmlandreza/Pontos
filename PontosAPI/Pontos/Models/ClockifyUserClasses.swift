@@ -8,9 +8,7 @@
 
 import Foundation
 
-// header da requisição
-
-// guardando email e api key
+// guardando email e api key localmente
 struct ClockifyUserHeader {
     static let (emailUser, xAPIKey) = ("email", "key")
     
@@ -28,7 +26,7 @@ struct ClockifyUserHeader {
     
     static var saveEmailAndxAPIKey = { (email: String, key: String) in
         UserDefaults.standard.set([emailUser: email, xAPIKey: key], forKey: userSessionKey)
-        UserDefaults.standard.synchronize()
+        //UserDefaults.standard.synchronize()
     }
     
     static var getEmailAndxAPIKey = { _ -> Model in
@@ -53,12 +51,3 @@ struct ClockifyUser: Codable{
         self.status = status
     }
 }
-
-//enum Status: String, Codable {
-//    case active = "Ativo"
-//    case pendingEmailVerification = "Verificação de e-mail pendente"
-//    case deactivated = "Desativo"
-//}
-
-
-
