@@ -11,7 +11,9 @@ import UIKit
 class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var userDetail: [ClockifyTimeEntries] = []
+    var holidays: [BrazilianHoliday] = []
     var user: ClockifyUser!
+    var times: ClockifyTimeEntries!
     
     // MARK: componentes da tela
     @IBOutlet weak var datesLabel: UILabel!
@@ -30,6 +32,13 @@ class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITable
     public var startValue: String? = nil // sem ser tratado
     public var stopValue: String? = nil
     
+    var label: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        //label.textColor = UIColor(ciColor: .blue)
+        return label
+    }()
+    
     // carga inicial
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +46,22 @@ class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITable
         datesLabel.text = ("\(startDateInfoValue!) a \(stopDateInfoValue!)")
         nameLabel.text = nameValidUser!
         
-        loadTimes()
         
+        label.text = "Carregando pontos registrados..."
+        
+        loadTimes()
+        loadHolidays()
+    }
+    
+    // FIXME: Implementar lista de feriados
+    func loadHolidays(){
+        let fileURL = Bundle.main.url(forResource: "brazilianHolidays.json", withExtension: nil)!
+        let jsonData = try! Data(contentsOf: fileURL)
+        do {
+            holidays = try JSONDecoder().decode([BrazilianHoliday].self, from: jsonData)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     // MARK: requisição - correspondente ao ClockifyTimeEntries
@@ -96,6 +119,7 @@ class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITable
                                     
                                     self.daysLabel.text = String(dias) + " dias registrados"
                                     self.hoursLabel.text = String(horas) + " horas obrigatórias"
+                                    
                                 }
                             }
                         } catch let parseError as NSError {
@@ -115,7 +139,7 @@ class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITable
     
     // MARK: obrigatório - número de linhas por sessão
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       //tableView.backgroundView = users.count == 0 ? label : nil
+        tableView.backgroundView = userDetail.count == 0 ? label : nil
         return userDetail.count
     }
     
@@ -131,4 +155,6 @@ class TimerTrackerViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {return true}}
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {return true}
+    
+}

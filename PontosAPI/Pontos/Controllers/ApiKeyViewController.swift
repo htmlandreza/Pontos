@@ -19,21 +19,24 @@ class ApiKeyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     @IBAction func chooseApiKey(_ sender: UIButton) {
         
-        var email: String? = ""
-        var apiKey: String? = ""
         
-        email = emailLabel.text
-        apiKey = apiKeyLabel.text
+        var emailModal: String? = ""
+        var keyModal: String? = ""
         
-        ClockifyUserHeader.clearUserData()
+        emailModal = emailLabel.text
+        keyModal = apiKeyLabel.text
         
-        reference?.changeUserAPI(email: email!, apiKey: apiKey!)
+        reference?.changeUserAPI(email: emailModal!, key: keyModal!)
         
         dismiss(animated: true, completion: nil)
-        view.endEditing(true)
+        
     }
     
     @IBAction func close(_ sender: Any) {
@@ -44,4 +47,5 @@ class ApiKeyViewController: UIViewController {
         // tirar o foco ao tocar em outras partes da tela
         view.endEditing(true)
     }
+    
 }

@@ -69,14 +69,14 @@ class TimerTrackerTableViewCell: UITableViewCell {
         let durationTime = user.timeInterval.duration
         let resultDurationTime = durationTime.components(separatedBy: ["P", "T", "H", "M"])
         //print (resultStartTime)
-        let horaDuration = (resultDurationTime[2])
+        var horaDuration = (resultDurationTime[2])
         var minDuration: String? = nil
         if resultDurationTime[3] == ""{
             minDuration = "00"
-        } else if resultDurationTime[1] != "" {
+        } else if resultDurationTime[3] != "" {
             minDuration = (resultDurationTime[3])
             if minDuration!.count == 1 {
-            minDuration = minDuration! + "0"
+            minDuration = "0" + minDuration!
             }
         }
     
@@ -87,5 +87,4 @@ class TimerTrackerTableViewCell: UITableViewCell {
         descriptionTimeLabel.text = user.description
         durationTimeLabel.text = "0" + horaDuration + ":" + (minDuration)!
     }
-    
 }

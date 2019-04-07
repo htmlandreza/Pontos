@@ -71,10 +71,25 @@ class UserDetailViewController: UIViewController {
     
     // botão Consultar
     @IBAction func generate(_ sender: UIButton) {
+        
+//        let start = DateFormatter()
+//        start.dateFormat = "dd/MM/yyyy"
+//        startTextField.text = start.string(from: datePicker.date)
+//        print(start)
+//        
+//        
+//        let end = DateFormatter()
+//        end.dateFormat = "dd/MM/yyyy"
+//        stopTextField.text = end.string(from: datePicker.date)
+//        print(end)
+//        
+        
         // valida se os intervalos de data então preenchidos
         if startTextField.text != "" && stopTextField.text != ""{
             validEmailSelected()
-        } else {
+        }
+        
+        else {
              homeAlert(title: "Datas vazias", message: "É necessário preencher os dois campos de data.")
         }
     }

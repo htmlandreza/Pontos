@@ -115,9 +115,9 @@
 		25225902224D3AB80039A369 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				257DEBA12252865800682C2F /* ClockifyUserClasses.swift */,
-				257DEBA32252874500682C2F /* ClockifyTimeEntriesInRangeClasses.swift */,
 				251A9B002257D20D004D3584 /* BrazilianHolidays.swift */,
+				257DEBA32252874500682C2F /* ClockifyTimeEntriesInRangeClasses.swift */,
+				257DEBA12252865800682C2F /* ClockifyUserClasses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

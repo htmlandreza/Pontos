@@ -12,11 +12,6 @@ class UsersTableViewController: UITableViewController {
     
     var users: [ClockifyUser] = []
     
-    // FIXME: Dados armazenados localmente
-    // dados armazenados localmente - para o header da requisição
-    let emailUser = ClockifyUserHeader.getEmailAndxAPIKey.email
-    let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key
-    
     var label: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
@@ -46,7 +41,13 @@ class UsersTableViewController: UITableViewController {
     
     // MARK: requisição
     public func loadUsers(){
-        if keyUser == nil {
+        
+        // FIXME: Dados armazenados localmente
+        // dados armazenados localmente - para o header da requisição
+        let emailUser = ClockifyUserHeader.getEmailAndxAPIKey.email
+        let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key
+        
+        if keyUser == "" {
             self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
             DispatchQueue.main.async {
                 self.filterList()
@@ -77,7 +78,7 @@ class UsersTableViewController: UITableViewController {
                     if let httpStatus = response as? HTTPURLResponse{
                         if httpStatus.statusCode == 200 {
                             print("Status Code da UsersTableViewController = \(httpStatus.statusCode)")
-                            print("Requisição inicial com o dados locais. /nE-mail: \(self.emailUser!) // Key: \(self.keyUser!)")
+                            print("Requisição inicial com o dados locais. \nE-mail: \(emailUser!) // Key: \(keyUser!)")
                             do {
                                 if let data = data{
                                     self.users = try! JSONDecoder().decode([ClockifyUser].self, from: data)
@@ -114,7 +115,7 @@ class UsersTableViewController: UITableViewController {
     func modalAlert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let Action = UIAlertAction(title: "Identificar-se", style: .default, handler: { (action) -> Void in self.openModal()}  )
+        let Action = UIAlertAction(title: "Identifique-se", style: .default, handler: nil  )
         alert.addAction(Action)
         self.present(alert, animated: true){}
     }
@@ -137,37 +138,36 @@ class UsersTableViewController: UITableViewController {
         return cell
     }
     
+    
+    
     // FIXME: verificar este botão
     @IBAction func validAPIKey(_ sender: UIButton) {
-        openModal()
-    }
-    
-    //FIXME: Não está atualizando na mesma hora
-    func changeUserAPI(email: String, apiKey: String){
-        print("Recebido: " + email, apiKey )
-        ClockifyUserHeader.clearUserData.self()
-        DispatchQueue.main.async {
-            
-            self.tableView.reloadData();
-            ClockifyUserHeader.saveEmailAndxAPIKey(email, apiKey)
-            
-            var value = ClockifyUserHeader.getEmailAndxAPIKey.email
-            print ("Enviado \(value)")
-        }
-    }
-    
-    // MARK: modal
-    func openModal(){
+        //openModal()
         let modalAPIKey = storyboard?.instantiateViewController(withIdentifier: "ApiKeyViewController") as! ApiKeyViewController
         modalAPIKey.modalPresentationStyle = .overCurrentContext
         modalAPIKey.reference = self
-                // recarrega
-                DispatchQueue.main.async {
-                    self.tableView.reloadData();
-                }
         present(modalAPIKey, animated: true, completion: nil)
-
+        self.tableView.reloadData();
     }
+    
+    //FIXME: Não está atualizando na mesma hora
+    func changeUserAPI(email: String?, key: String?){
+        
+        ClockifyUserHeader.saveEmailAndxAPIKey(email!, key!)
+        
+        print("Recebido: " + email!, key!)
+        
+    }
+//
+//    // MARK: modal
+//    func openModal(){
+//        let modalAPIKey = storyboard?.instantiateViewController(withIdentifier: "ApiKeyViewController") as! ApiKeyViewController
+//        modalAPIKey.modalPresentationStyle = .overCurrentContext
+//        modalAPIKey.reference = self
+//
+//        present(modalAPIKey, animated: true, completion: nil)
+//
+//    }
 } // fim da classe UsersTableViewController
 
 extension UsersTableViewController: UITextFieldDelegate{
