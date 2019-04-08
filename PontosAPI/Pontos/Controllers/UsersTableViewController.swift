@@ -48,7 +48,7 @@ class UsersTableViewController: UITableViewController {
         let keyUser = ClockifyUserHeader.getEmailAndxAPIKey.key
         
         if keyUser == "" {
-            self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
+            self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.", action: "Alterar identificação")
             DispatchQueue.main.async {
                 self.filterList()
             }
@@ -96,7 +96,7 @@ class UsersTableViewController: UITableViewController {
                         // se status code != 200
                         else {
                             print("Status Code do UsersTableViewController = \(httpStatus.statusCode)")
-                            self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.")
+                            self.modalAlert(title: "Usuário não identificado", message: "Identifique-se com e-mail e API Key válida.", action: "Identificar-se")
                         } // fecha else
                     } // fecha httpurlresponse
                 }
@@ -112,10 +112,10 @@ class UsersTableViewController: UITableViewController {
     }
     
     // MARK: alerta
-    func modalAlert(title: String, message: String){
+    func modalAlert(title: String, message: String, action: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let Action = UIAlertAction(title: "Identifique-se", style: .default, handler: nil  )
+        let Action = UIAlertAction(title: action, style: .default, handler: nil  )
         alert.addAction(Action)
         self.present(alert, animated: true){}
     }
@@ -150,12 +150,27 @@ class UsersTableViewController: UITableViewController {
         self.tableView.reloadData();
     }
     
+    // MARK: Alerta
+    func warningAlert(title: String, message: String, action: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let Action = UIAlertAction(title: action, style: .default, handler: nil)
+        alert.addAction(Action)
+        self.present(alert, animated: true)
+    }
+    
     //FIXME: Não está atualizando na mesma hora
     func changeUserAPI(email: String?, key: String?){
         
-        ClockifyUserHeader.saveEmailAndxAPIKey(email!, key!)
-        
-        print("Recebido: " + email!, key!)
+        if email! == "" && key! == ""{
+            dismiss(animated: true, completion: nil)
+            warningAlert(title: "Identificação inválida", message: "É necessário preencher o campo e-mail e o campo API Key.", action: "Tente novamente")
+        }
+        else {
+            ClockifyUserHeader.saveEmailAndxAPIKey(email!, key!)
+            
+            print("Recebido: " + email!, key!)
+        }
         
     }
 //

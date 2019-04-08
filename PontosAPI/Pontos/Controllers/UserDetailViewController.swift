@@ -78,7 +78,7 @@ class UserDetailViewController: UIViewController {
             if startTextField.text != "" && stopTextField.text != "" {
                 // Ambas as datas são as mesmas
                 if startDateInfoValue?.compare(stopDateInfoValue!) == .orderedSame {
-                    homeAlert(title: "Datas identicas", message: "É necessário preencher um intervalo de data maior. Por favor, tente novamente.")
+                    homeAlert(title: "Datas identicas", message: "É necessário preencher um intervalo de data maior. Por favor, tente novamente.", action: "Alterar")
                 }
                 
                 // Primeira data é menor que a segunda data
@@ -88,13 +88,13 @@ class UserDetailViewController: UIViewController {
                 
                 // A primeira data é maior que a segunda data
                 if startDateInfoValue?.compare(stopDateInfoValue!) == .orderedDescending {
-                    homeAlert(title: "Datas inválidas", message: "Não é possível consultar pois a primera data está maior que a segunda data. Por favor, tente novamente.")
+                    homeAlert(title: "Datas inválidas", message: "Não é possível consultar pois a primera data está maior que a segunda data. Por favor, tente novamente.", action: "Alterar")
                 }
                 
             }
             // se uma das datas estiver vazia
             else {
-                 homeAlert(title: "Data(s) vazia(s)", message: "É necessário preencher os dois campos de datas. Por favor, tente novamente.")
+                 homeAlert(title: "Data(s) vazia(s)", message: "É necessário preencher os dois campos de datas. Por favor, tente novamente.", action: "Preencher")
             }
         } catch {
             print("Erro na coletas de data.")
@@ -118,7 +118,7 @@ class UserDetailViewController: UIViewController {
     func validEmailSelected(){
         if user.email != emailUser {
             // validEmail()
-            homeAlert(title: "E-mail do usuário não corresponde", message: "O e-mail do usuário identificado não é correspondente ao e-mail do usuário selecionado. Só é permitido consultar o próprio usuário que foi identificado. Volte ao início e identifique-se.")
+            homeAlert(title: "E-mail do usuário não corresponde", message: "O e-mail do usuário identificado não é correspondente ao e-mail do usuário selecionado. Só é permitido consultar o próprio usuário que foi identificado. Volte ao início e identifique-se.", action: "Alterar identificação")
             startTextField.isHidden = true
             stopTextField.isHidden = true
             relatorioLabel.text = "Relatório indisponível. Usuário não identificado."
@@ -194,16 +194,13 @@ class UserDetailViewController: UIViewController {
                         // se status code != 200
                         else {
                             print("Status Code do UserDatail = \(httpStatus.statusCode)")
-                            self.homeAlert(title: "API Key inválida", message: "Identifique-se com e-mail e API Key válida.")
+                            self.homeAlert(title: "API Key inválida", message: "Identifique-se com e-mail e API Key válida.", action: "Alterar identificação")
                         }
                     }
                 }
             })// fecha dataTask
         dataTask.resume()
     } // fecha loadTimes()
-    
-    
-   
     
     // MARK: modifica do teclado para o datePicker - Start Text Field
     func startShowDatePicker(){
@@ -297,10 +294,10 @@ class UserDetailViewController: UIViewController {
     
     // MARK: Alerta
     // FIXME: Bug da volta para a tela inicial, apois isso a navegação para de funcionar
-    func homeAlert(title: String, message: String){
+    func homeAlert(title: String, message: String, action: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         
-        let Action = UIAlertAction(title: "Alterar identificação", style: .default, handler: nil
+        let Action = UIAlertAction(title: action, style: .default, handler: nil
             
         //// volta para a tela inicial
         //{ _ -> Void in
