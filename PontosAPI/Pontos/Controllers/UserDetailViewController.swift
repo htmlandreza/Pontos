@@ -71,26 +71,33 @@ class UserDetailViewController: UIViewController {
     
     // botão Consultar
     @IBAction func generate(_ sender: UIButton) {
-        
-//        let start = DateFormatter()
-//        start.dateFormat = "dd/MM/yyyy"
-//        startTextField.text = start.string(from: datePicker.date)
-//        print(start)
-//        
-//        
-//        let end = DateFormatter()
-//        end.dateFormat = "dd/MM/yyyy"
-//        stopTextField.text = end.string(from: datePicker.date)
-//        print(end)
-//        
-        
+        // MARK: validando datas informadas pelo usuário
         // valida se os intervalos de data então preenchidos
-        if startTextField.text != "" && stopTextField.text != ""{
-            validEmailSelected()
-        }
-        
-        else {
-             homeAlert(title: "Datas vazias", message: "É necessário preencher os dois campos de data.")
+        do {
+            // se as datas foram preenchidas
+            if startTextField.text != "" && stopTextField.text != "" {
+                // Ambas as datas são as mesmas
+                if startDateInfoValue?.compare(stopDateInfoValue!) == .orderedSame {
+                    homeAlert(title: "Datas identicas", message: "É necessário preencher um intervalo de data maior. Por favor, tente novamente.")
+                }
+                
+                // Primeira data é menor que a segunda data
+                if startDateInfoValue?.compare(stopDateInfoValue!) == .orderedAscending {
+                    validEmailSelected()
+                }
+                
+                // A primeira data é maior que a segunda data
+                if startDateInfoValue?.compare(stopDateInfoValue!) == .orderedDescending {
+                    homeAlert(title: "Datas inválidas", message: "Não é possível consultar pois a primera data está maior que a segunda data. Por favor, tente novamente.")
+                }
+                
+            }
+            // se uma das datas estiver vazia
+            else {
+                 homeAlert(title: "Data(s) vazia(s)", message: "É necessário preencher os dois campos de datas. Por favor, tente novamente.")
+            }
+        } catch {
+            print("Erro na coletas de data.")
         }
     }
     
@@ -195,6 +202,9 @@ class UserDetailViewController: UIViewController {
         dataTask.resume()
     } // fecha loadTimes()
     
+    
+   
+    
     // MARK: modifica do teclado para o datePicker - Start Text Field
     func startShowDatePicker(){
         // formate date
@@ -223,7 +233,8 @@ class UserDetailViewController: UIViewController {
         startTextField.text = formatter.string(from: datePicker.date)
         self.view.endEditing(true)
         startDateInfoValue = formatter.string(from: datePicker.date)
-        print ("Start Date Info = \(startDateInfoValue)")
+        //print ("Start Date Info = \(startDateInfoValue)")
+
         
         // transformando para o parâmetro
         let start = DateFormatter()
@@ -231,7 +242,7 @@ class UserDetailViewController: UIViewController {
         let startValue = start.string(from: datePicker.date)
         print(startValue)
         startDateValue = startValue
-        print(startDateValue)
+        //print(startDateValue)
     }
     
     // MARK: datepicker - Botão de Cancelar -  Start Text Field
